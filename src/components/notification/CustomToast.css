@@ -1,0 +1,61 @@
+.ant-notification-notice-loading {
+    background: #f5f2ff;
+}
+.ant-notification-notice-warning {
+    background: #FFF4D5;
+}
+.ant-notification-notice-success {
+    background: #D9F3EE;
+}
+.ant-notification-notice-error {
+    background: #FFEFEF;
+}
+.ant-notification-notice-info {
+    background: #F1F3F5;
+}
+.ant-notification-notice {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+}
+.ant-notification-notice-loading .ant-notification-notice-message {
+    color: #6e56cf !important;
+}
+
+.ant-notification-notice-warning .ant-notification-notice-message {
+    color: #ee9d2b !important;
+}
+
+.ant-notification-notice-success .ant-notification-notice-message {
+    color: #12a594 !important;
+}
+
+.ant-notification-notice-error .ant-notification-notice-message {
+    color: #e5484d !important;
+}
+
+.ant-notification-notice-info .ant-notification-notice-message {
+    color: #11181c !important;
+}
+.ant-notification-notice-close {
+    font-size: large;
+    font-weight: 700;
+}
+.ant-notification-notice-with-icon {
+    display: flex;
+    align-items: center;
+}
+.icon-loading {
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

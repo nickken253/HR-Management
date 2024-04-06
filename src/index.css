@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities"; */
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("https://db.onlinewebfonts.com/t/bab845ed46b9ada0916b126689b6d069.eot");
+  src:
+    url("https://db.onlinewebfonts.com/t/bab845ed46b9ada0916b126689b6d069.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/bab845ed46b9ada0916b126689b6d069.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/bab845ed46b9ada0916b126689b6d069.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/bab845ed46b9ada0916b126689b6d069.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/bab845ed46b9ada0916b126689b6d069.svg#Sofia Pro Viet") format("svg");
+}
+
+:root {
+  font-family: "Sofia Pro";
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 1);
+  background-color: #f8f9fa;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+div {
+  font-family: "Sofia Pro";
+}
+span {
+  font-family: "Sofia Pro";
+}
+body {
+  margin: 0;
+  font-family: "Sofia Pro", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 1);
+  background-color: #f8f9fa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+h3 {
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 0;
+}
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.1;
+}
+h6 {
+  font-size: 1.125rem;
+  line-height: 1.1;
+}

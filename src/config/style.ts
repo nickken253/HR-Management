@@ -1,0 +1,1 @@
+export const AvatarBackGroundColor = ['#AB1E00', '#AB8A00', '#40AB00', '#00AB98', '#0059AB', '#3000AB', '#A600AB', '#AB0044']
