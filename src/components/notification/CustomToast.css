@@ -17,7 +17,14 @@
     border-radius: 8px;
     display: flex;
     align-items: center;
+    
+}
+.ant-notification-notice-wrapper {
+    z-index: 9999 !important;
 
+}
+.ant-notification {
+    z-index: 9999 !important;
 }
 .ant-notification-notice-loading .ant-notification-notice-message {
     color: #6e56cf !important;

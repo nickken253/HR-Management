@@ -2,7 +2,8 @@ import { FormField } from "../../../../components/form/FormField/FormField";
 import { Form, type FormProps } from "antd";
 import { CustomButton } from "../../../../components/button/CustomButton";
 import * as S from "../AuthForm.styled";
-import { getUserDetail, login } from "../../api/login";
+import { getUser } from "../../api/getUser";
+import { login, logout } from "../../../../lib/auth";
 import {
   ILoginCredentials,
   ILoginResponse,
@@ -16,18 +17,13 @@ interface LoginFormProps {
 }
 
 export const LoginForm = ({ onSuccess }: LoginFormProps) => {
-  const dispatch = useDispatch();
   const onFinish: FormProps<ILoginCredentials>["onFinish"] = async (values) => {
     const response: ILoginResponse = await login(values);
-    if (response.data && !response.error) {
+    console.log('response: ', response);
+
+    if (response. data && !response.error) {
       CustomToast({ toastType: "success", message: "Login success" });
-      const response: IUserResponse = await getUserDetail();
-      if (response.data && !response.error) {
-        dispatch(setUsername(response.data));
-        onSuccess();
-      } else {
-        CustomToast({ toastType: "error", message: response.message.toString() });
-      }
+      onSuccess();
     } else {
       CustomToast({ toastType: "error", message: response.message.toString() });
     }

@@ -2,6 +2,7 @@ import { Select } from "antd";
 import styled from "styled-components";
 
 export const Header = styled.div`
+position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10,10 +11,7 @@ export const Header = styled.div`
 
   background: #ffffff;
   box-shadow: 0px 3px 15px #eceef0;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  z-index: 10000 !important;
 `;
 
 export const Logo = styled.img`

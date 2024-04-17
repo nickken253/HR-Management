@@ -13,25 +13,10 @@ import './App.css';
 
 
 function App() {
-  // const queryClient = new QueryClient();
   return (
     <Router>
-      {/* <QueryClientProvider client={queryClient}>
-      <ToastContainer
-        position="top-right"
-        autoClose={1000}
-        hideProgressBar={false}
-        newestOnTop
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover={false}
-        theme="light"
-/> */}
         <AppRoutes />
         <Footer />
-      {/* </QueryClientProvider> */}
     </Router>
   );
 }

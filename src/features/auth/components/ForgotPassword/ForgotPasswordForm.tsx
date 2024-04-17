@@ -2,7 +2,7 @@ import { FormField } from "../../../../components/form/FormField/FormField";
 import { Form, type FormProps } from "antd";
 import { CustomButton } from "../../../../components/button/CustomButton";
 import * as S from "../AuthForm.styled";
-import { login } from "../../api/login";
+import { loginWithUsernameAndPassword } from "../../api/login";
 import { ILoginCredentials, ILoginResponse } from "../../../../interfaces/auth.interface";
 import { CustomToast } from "../../../../components/notification/CustomToast";
 interface LoginFormProps {
@@ -12,7 +12,7 @@ interface LoginFormProps {
 
 export const ForgotPasswordForm = ({ onSuccess }: LoginFormProps) => {
   const onFinish: FormProps<ILoginCredentials>["onFinish"] = async (values) => {
-    const response: ILoginResponse = await login(values);
+    const response: ILoginResponse = await loginWithUsernameAndPassword(values);
     if (response.data && !response.error) {
       CustomToast({ toastType: "success", message: "Login success" });
       // onSuccess();

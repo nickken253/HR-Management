@@ -19,5 +19,4 @@ export const publicRoute = [
     //         <Route path="/management/*" element={<ManagementRoutes />} />
     //     </Routes>
     // }
-
 ]

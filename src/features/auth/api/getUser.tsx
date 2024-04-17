@@ -1,12 +1,11 @@
 import { axios } from "../../../lib/axios";
 import { ILoginCredentials, ILoginData } from "../../../interfaces/auth.interface";
 import storage from "../../../utils/storage";
-import { AxiosResponse } from "axios";
 
-export const loginWithUsernameAndPassword = async (credentials: ILoginCredentials): Promise<any> => {
+export const getUser = async (): Promise<any> => {
   try {
-    const response = await axios.post("/login", credentials);
-    return response; 
+    const response = await axios.get("/user/detail");
+    return response;
   } catch (error:any) {
     return {
       message: error.response?.data?.message || error.message,
@@ -14,5 +13,4 @@ export const loginWithUsernameAndPassword = async (credentials: ILoginCredential
       error: true,
     };
   }
-};
-
+}
